@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ary Develop</title>
+    <link rel="stylesheet" href="/default.css">
+    <style>
+        #recent-post{
+            display: grid;
+            grid-template-columns: 250px 200px 200px 200px 200px;
+            grid-template-rows: 150px 150px;
+            grid-template-areas: 
+            "ary ary ary";
+        }
+        .card-big{
+            background-color: rgb(193, 87, 255); ;
+            height: 300px;
+            width: 250px;
+            grid-area: ary;
+        }
+        .card1{
+            background-color: rgb(255, 87, 87);
+        }
+        .card2{
+            background-color: rgb(255, 163, 87);
+        }
+        .card3{
+            background-color: rgb(255, 238, 87);
+        }
+        .card4{
+            background-color: rgb(135, 255, 87);
+        }
+        .card5{
+            background-color: rgb(87, 255, 165);
+        }
+        .card6{
+            background-color: rgb(87, 160, 255);
+        }
+        #small-recent-post-container{
+            display: flex;
+        }
+        #recent-post{
+            display: flex;
+        }
+        h2{
+            font-weight: 500;
+            margin: 0.5em 0;
+        }
+    </style>
+</head>
+<body>
+    <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    nav {
+        position: fixed;
+        padding: 0 1em;
+        font-size: 24px;
+        background-color:#FFFF70;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 1px 5px 0px hsl(60, 100%, 25%);
+    }
+    a{
+        color:black;
+        text-decoration: none;
+        transition: 0.2s;
+    }
+    a:hover{
+        text-decoration: underline;
+        color:hsl(0, 0%, 25%);
+        /* transform: translate(0px,0px); */
+    }
+</style>
+<nav>
+    <a href="" id="nav-icon">Ary Dev</a>
+    <a href="/about" id="nav-about">About</a>
+</nav>
+    <div id="whitespace" style="height: 10vh;"></div>
+    <h2>Recent Post</h2>
+    <div id="recent-post">
+        <!--  -->
+        <!-- <div class="card">
+            <img class="post-image" src="/assets/post-header/" alt="post image">
+            <div class="post-title">blogpost</div>
+        </div> -->
+        <!--  -->
+        <!-- <div class="card">
+            <img class="post-image" src="/assets/post-header/" alt="post image">
+            <div class="post-title">Welcome to Jekyll!</div>
+        </div> -->
+        <!--  -->
+        <div class="card-big">
+            <img class="post-image" src="/assets/post-header/" alt="post image">
+            <div class="post-title">Big image</div>
+        </div>
+        <div id="small-recent-post-container">
+            <div class="card1">
+                <img class="post-image" src="/assets/post-header/" alt="post image">
+                <div class="post-title">Card1</div>
+            </div>
+            <div class="card2">
+                <img class="post-image" src="/assets/post-header/" alt="post image">
+                <div class="post-title">Card2</div>
+            </div>
+            <div class="card3">
+                <img class="post-image" src="/assets/post-header/" alt="post image">
+                <div class="post-title">Card3</div>
+            </div>
+            <div class="card4">
+                <img class="post-image" src="/assets/post-header/" alt="post image">
+                <div class="post-title">Card4</div>
+            </div>
+            <div class="card5">
+                <img class="post-image" src="/assets/post-header/" alt="post image">
+                <div class="post-title">Card5</div>
+            </div>
+            <div class="card6">
+                <img class="post-image" src="/assets/post-header/" alt="post image">
+                <div class="post-title">Card6</div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="tags">
+        <div class="tags-card">
+            <img class="post-image" src="/assets/post-header/" alt="post image">
+                <div class="post-title">Card6</div>
+        </div>
+    </div>
+
+
+    <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    .icons{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon{
+        width: 32px;
+        margin: 0 1.5rem;
+    }
+    footer{
+        padding: 1em;
+        font-weight: 500;
+        color: hsl(60, 100%, 95%);
+        margin-top: 240px;
+        background-color:hsl(60, 79%, 5%);
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+</style>
+<footer>
+    <div>
+        <h2>Ary Develop</h2>
+        <div class="icons">
+            <a href="https://github.com/arydevelop" ><img src="/assets/icons/github.png" alt="github" class="icon"></a>
+        </div>
+    </div>
+    <div id="copyright">© 2021 Ary Dev </div>
+</footer>
+</body>
+</html>

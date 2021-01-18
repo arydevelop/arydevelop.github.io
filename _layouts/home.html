@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ary Develop</title>
+    <link rel="stylesheet" href="/default.css">
+    <style>
+        #recent-post{
+            display: grid;
+            grid-template-columns: 250px 200px 200px 200px 200px;
+            grid-template-rows: 150px 150px;
+            grid-template-areas: 
+            "ary ary ary";
+        }
+        .card-big{
+            background-color: rgb(193, 87, 255); ;
+            height: 300px;
+            width: 250px;
+            grid-area: ary;
+        }
+        .card1{
+            background-color: rgb(255, 87, 87);
+        }
+        .card2{
+            background-color: rgb(255, 163, 87);
+        }
+        .card3{
+            background-color: rgb(255, 238, 87);
+        }
+        .card4{
+            background-color: rgb(135, 255, 87);
+        }
+        .card5{
+            background-color: rgb(87, 255, 165);
+        }
+        .card6{
+            background-color: rgb(87, 160, 255);
+        }
+        #small-recent-post-container{
+            display: flex;
+        }
+        #recent-post{
+            display: flex;
+        }
+        h2{
+            font-weight: 500;
+            margin: 0.5em 0;
+        }
+    </style>
+</head>
+<body>
+    {% include nav.html %}
+    <div id="whitespace" style="height: 10vh;"></div>
+    <h2>Recent Post</h2>
+    <div id="recent-post">
+        <!-- {% for post in site.posts %} -->
+        <!-- <div class="card">
+            <img class="post-image" src="/assets/post-header/" alt="post image">
+            <div class="post-title">{{post.title}}</div>
+        </div> -->
+        <!-- {%endfor;%} -->
+        <div class="card-big">
+            <img class="post-image" src="/assets/post-header/" alt="post image">
+            <div class="post-title">Big image</div>
+        </div>
+        <div id="small-recent-post-container">
+            <div class="card1">
+                <img class="post-image" src="/assets/post-header/" alt="post image">
+                <div class="post-title">Card1</div>
+            </div>
+            <div class="card2">
+                <img class="post-image" src="/assets/post-header/" alt="post image">
+                <div class="post-title">Card2</div>
+            </div>
+            <div class="card3">
+                <img class="post-image" src="/assets/post-header/" alt="post image">
+                <div class="post-title">Card3</div>
+            </div>
+            <div class="card4">
+                <img class="post-image" src="/assets/post-header/" alt="post image">
+                <div class="post-title">Card4</div>
+            </div>
+            <div class="card5">
+                <img class="post-image" src="/assets/post-header/" alt="post image">
+                <div class="post-title">Card5</div>
+            </div>
+            <div class="card6">
+                <img class="post-image" src="/assets/post-header/" alt="post image">
+                <div class="post-title">Card6</div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="tags">
+        <div class="tags-card">
+            <img class="post-image" src="/assets/post-header/" alt="post image">
+                <div class="post-title">Card6</div>
+        </div>
+    </div>
+
+
+    {% include footer.html %}
+</body>
+</html>

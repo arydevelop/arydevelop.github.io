@@ -1,0 +1,79 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/default.css">
+<style>
+    #container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #update{
+        margin : 16px 0;
+        font-size: 12px;
+        color: grey;
+    }
+    #title{
+        margin: 96px 0 32px;
+    }
+    article{
+        width: 60%;
+    }
+    h2{
+        font-weight: 500;
+        margin: 0 0 0.5rem;
+    }
+    p{
+
+        margin : 0 0 1rem;
+        line-height: 28px;
+
+    }
+    h1{
+        font-weight: 500;
+    }
+    #updatentags{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 1rem;
+    }
+    .tag{
+        /* background-color: #FFFF70; */
+        background-color: #a6ff81;
+        /* background-color: #5962FF; */
+        margin: 0 0.5rem;
+        padding: 0.2em;
+        box-shadow: -3px 5px 4px 0px #FFFF70;
+        
+    }
+
+</style>
+</head>
+<body>
+{%include nav.html%}
+<div id="container">
+    <h1 id="title">{{page.title}}</h1>
+    
+    <article>
+        <div id="updatentags"><div id="update"> Updated on {{page.date}}</div>
+        <div id="tags">
+            {% for tag in page.tags %}
+            <span class = "tag">#{{tag}}</span>
+            {%endfor;%}
+        </div>
+    </div>
+        <h2>Some Lorem</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et eros sit amet velit rutrum placerat et ac nisi. Donec ultrices mauris eu ante tempor semper. Suspendisse venenatis et lacus ut hendrerit. Pellentesque nec ligula pellentesque, scelerisque est quis, condimentum dui. Praesent vitae tincidunt sapien, non consequat nulla. Maecenas rhoncus nulla eu volutpat bibendum. In dictum ornare nulla. Duis pharetra, velit in vestibulum consectetur, libero erat mollis nisl, nec imperdiet ex nisi elementum orci. Mauris feugiat ultrices nibh, at malesuada sapien vehicula at. Donec non enim scelerisque, dictum erat ut, interdum elit.</p>
+        <p>In hac habitasse platea dictumst. Donec mattis mi ut tellus ultricies blandit. Nullam eu finibus augue. Donec vestibulum gravida nunc at mattis. Etiam eleifend ut lorem sit amet tincidunt. Proin pellentesque scelerisque nisi, vel vulputate massa gravida sit amet. Fusce pretium tellus ut porta sollicitudin. Aliquam sit amet velit in velit malesuada consequat. Donec vitae velit eros. Vivamus aliquet erat felis, ut efficitur felis vehicula nec. Maecenas quis augue non lacus efficitur elementum non bibendum mi. Suspendisse at ultricies sem. Phasellus sollicitudin nisl sed mauris pulvinar, ac auctor felis bibendum. Quisque semper eget nulla at mattis. Morbi ullamcorper a nunc a sagittis.</p>
+        <h2>Some Lorem again</h2>
+        <p>Fusce iaculis porta metus vitae scelerisque. Sed sodales bibendum ex quis facilisis. Donec nec risus vitae sapien scelerisque ornare non non tellus. Mauris eget dictum mi, fringilla tempus ligula. Proin at dui varius, luctus nibh eget, faucibus est. Nunc diam leo, lobortis a tincidunt sit amet, malesuada fermentum mauris. Aliquam volutpat, lacus sit amet consectetur convallis, lorem leo consectetur sem, et vehicula eros ligula sed purus. Pellentesque pharetra maximus imperdiet. Quisque at velit a felis lobortis iaculis et at urna. Sed malesuada mauris non nulla vulputate, vitae faucibus urna vestibulum. In nec facilisis enim. Cras malesuada aliquet faucibus. Nulla facilisi.</p>
+        
+        <p>Curabitur ut ligula ligula. Ut tristique tellus sed condimentum elementum. Quisque nisi libero, convallis a nulla ac, consectetur condimentum mauris. Vestibulum pulvinar vulputate est. Morbi rutrum blandit leo imperdiet tincidunt. Aenean finibus sed sapien ac porta. Nam bibendum aliquam ipsum ac cursus. Sed eu dolor facilisis, vestibulum arcu ac, rutrum enim. Curabitur varius molestie quam. Curabitur nec libero massa. Etiam ultrices condimentum tincidunt. Fusce non faucibus elit, id hendrerit velit. Suspendisse non varius leo.</p>
+        <h2>Another Lorem</h2>
+        <p>Nunc vel nibh eu nulla suscipit scelerisque. Nullam ac lectus vel urna feugiat pharetra vitae a nulla. Fusce lobortis elementum metus eget faucibus. Curabitur a nisi dignissim, rhoncus diam id, pretium leo. Nullam sodales massa et neque convallis tincidunt. Mauris faucibus nibh sed ipsum interdum, eu faucibus eros faucibus. Aliquam ut libero neque.        </p>
+    </article>
+</div>
+{% include footer.html %}
+</body>
+</html>
