@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="/default.css">
+    <style>
+        #content{
+            width: 60%;
+            display: flex;
+            margin: 2em 0;
+        }
+        #content img{
+            width: 40%;
+        }
+        #content p {
+            width: 60%;
+        }
+        #container{
+            min-height: 50vh;
+            margin: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    {% include nav.html %}
+    <div id="whitespace" style="height: 10vh;"></div>
+    <div id="container">
+        <h1>About</h1>
+        <div id="content">
+            <img src="/assets/about" alt="my image">
+            <p>
+            <strong>Hello World !</strong> Namaku Ary, blog ini dibuat biar aku ngga lupa sama apa yang aku pelajarin, 
+            di blog ini, topik-topik yang aku akan bahas ialah seputar programming, web programming, linux, dan mungkin lebih banyak lagi.
+            </p>
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+</html>

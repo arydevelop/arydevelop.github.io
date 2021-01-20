@@ -5,36 +5,28 @@
     <title>Ary Develop</title>
     <link rel="stylesheet" href="/default.css">
     <style>
-        #recent-post{
+        body{
+
+        }
+        .recent-post{
+            margin: 0 1rem;
+            height: 60vh;
             display: grid;
-            grid-template-columns: 250px 200px 200px 200px 200px;
-            grid-template-rows: 150px 150px;
-            grid-template-areas: 
-            "ary ary ary";
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(2, 1fr);
         }
-        .card-big{
+        .big-card{
             background-color: rgb(193, 87, 255); ;
-            height: 300px;
-            width: 250px;
-            grid-area: ary;
+            grid-column: 1/2;
+            grid-row:1/3;
         }
-        .card1{
-            background-color: rgb(255, 87, 87);
+        .post-image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
-        .card2{
-            background-color: rgb(255, 163, 87);
-        }
-        .card3{
-            background-color: rgb(255, 238, 87);
-        }
-        .card4{
-            background-color: rgb(135, 255, 87);
-        }
-        .card5{
-            background-color: rgb(87, 255, 165);
-        }
-        .card6{
-            background-color: rgb(87, 160, 255);
+        .post-title{
+            z-index: 5;
         }
         #small-recent-post-container{
             display: flex;
@@ -80,28 +72,59 @@
     }
 </style>
 <nav>
-    <a href="" id="nav-icon">Ary Dev</a>
+    <a href="/" id="nav-icon">Ary Dev</a>
     <a href="/about" id="nav-about">About</a>
 </nav>
     <div id="whitespace" style="height: 10vh;"></div>
     <h2>Recent Post</h2>
-    <div id="recent-post">
-        <!--  -->
-        <!-- <div class="card">
-            <img class="post-image" src="/assets/post-header/" alt="post image">
-            <div class="post-title">blogpost</div>
-        </div> -->
-        <!--  -->
-        <!-- <div class="card">
-            <img class="post-image" src="/assets/post-header/" alt="post image">
-            <div class="post-title">Welcome to Jekyll!</div>
-        </div> -->
-        <!--  -->
-        <div class="card-big">
+    <div class="recent-post">
+        
+        
+        <div class="big-card">
+            <img class="post-image" src="/assets/post-header/New Blog" alt="New Blog">
+            <a href="/linux/2021/01/07/new-blog.html"><div class="post-title">New Blog</div></a>
+        </div>
+        
+        
+        
+        <div class="card">
+            <img class="post-image" src="/assets/post-header/New Blog Two" alt="New Blog Two">
+            <a href="/linux/2021/01/07/new-blog-two.html"><div class="post-title">New Blog Two</div></a>
+        </div>
+        
+        
+        
+        <div class="card">
+            <img class="post-image" src="/assets/post-header/New Blog Three" alt="New Blog Three">
+            <a href="/linux/2021/01/07/new-blog-three.html"><div class="post-title">New Blog Three</div></a>
+        </div>
+        
+        
+        
+        <div class="card">
+            <img class="post-image" src="/assets/post-header/New Blog One" alt="New Blog One">
+            <a href="/linux/2021/01/07/new-blog-one.html"><div class="post-title">New Blog One</div></a>
+        </div>
+        
+        
+        
+        <div class="card">
+            <img class="post-image" src="/assets/post-header/New Blog Four" alt="New Blog Four">
+            <a href="/linux/2021/01/07/new-blog-four.html"><div class="post-title">New Blog Four</div></a>
+        </div>
+        
+        
+        
+        <div class="card">
+            <img class="post-image" src="/assets/post-header/Welcome to Jekyll!" alt="Welcome to Jekyll!">
+            <a href="/jekyll/update/2020/12/31/welcome-to-jekyll.html"><div class="post-title">Welcome to Jekyll!</div></a>
+        </div>
+        
+        
+        <!-- <div class="card-big">
             <img class="post-image" src="/assets/post-header/" alt="post image">
             <div class="post-title">Big image</div>
         </div>
-        <div id="small-recent-post-container">
             <div class="card1">
                 <img class="post-image" src="/assets/post-header/" alt="post image">
                 <div class="post-title">Card1</div>
@@ -125,16 +148,14 @@
             <div class="card6">
                 <img class="post-image" src="/assets/post-header/" alt="post image">
                 <div class="post-title">Card6</div>
-            </div>
-        </div>
-        
+            </div> -->
     </div>
-    <div id="tags">
+    <!-- <div id="tags">
         <div class="tags-card">
             <img class="post-image" src="/assets/post-header/" alt="post image">
                 <div class="post-title">Card6</div>
         </div>
-    </div>
+    </div> -->
 
 
     <style>

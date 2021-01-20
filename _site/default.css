@@ -7,10 +7,8 @@
     } 
     html, body{
         min-height: 100vh;
-        border: red 1px solid;
     }
     footer{
-        border: blue 5px solid;
     }
     h2{
         font-weight: 500;
