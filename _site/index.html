@@ -5,38 +5,51 @@
     <title>Ary Develop</title>
     <link rel="stylesheet" href="/default.css">
     <style>
-        body{
-
-        }
-        .recent-post{
-            margin: 0 1rem;
-            height: 60vh;
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            grid-template-rows: repeat(2, 1fr);
-        }
-        .big-card{
-            background-color: rgb(193, 87, 255); ;
-            grid-column: 1/2;
-            grid-row:1/3;
-        }
-        .post-image{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .post-title{
-            z-index: 5;
-        }
-        #small-recent-post-container{
+        #container{
             display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         #recent-post{
             display: flex;
+            flex-direction: column;
+            width: 60%;
         }
         h2{
             font-weight: 500;
-            margin: 0.5em 0;
+        }
+        h1{
+            margin: 1em 0;
+        }
+        .tag{
+            font-size: 12px;
+        /* background-color: #FFFF70; */
+        background-color: #a6ff81;
+        /* background-color: #5962FF; */
+        margin: 0 0.5em;
+        padding: 0.2em;
+        box-shadow: -3px 5px 4px 0px #FFFF70;
+        user-select: none;
+        
+    }
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+        a:hover{
+            color: hsl(58, 80%, 50%);
+        }
+        .card{
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+            background-color: #ffff7009;
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.37);
+        }
+        .titlentags{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     </style>
 </head>
@@ -59,105 +72,149 @@
         justify-content: space-between;
         align-items: center;
         box-shadow: 0 1px 5px 0px hsl(60, 100%, 25%);
+        user-select: none;
     }
-    a{
+    .nav-link{
         color:black;
         text-decoration: none;
         transition: 0.2s;
     }
-    a:hover{
+    .nav-link:hover{
         text-decoration: underline;
         color:hsl(0, 0%, 25%);
         /* transform: translate(0px,0px); */
     }
 </style>
 <nav>
-    <a href="/" id="nav-icon">Ary Dev</a>
-    <a href="/about" id="nav-about">About</a>
+    <a href="/" class="nav-link">Ary Dev</a>
+    <a href="/about" class="nav-link">About</a>
 </nav>
     <div id="whitespace" style="height: 10vh;"></div>
-    <h2>Recent Post</h2>
-    <div class="recent-post">
-        
-        
-        <div class="big-card">
-            <img class="post-image" src="/assets/post-header/New Blog" alt="New Blog">
-            <a href="/linux/2021/01/07/new-blog.html"><div class="post-title">New Blog</div></a>
-        </div>
-        
+    <div id="container">
+        <h1 style="user-select: none;">Recent Post</h1>
+    <div id="recent-post">
         
         
         <div class="card">
-            <img class="post-image" src="/assets/post-header/New Blog Two" alt="New Blog Two">
-            <a href="/linux/2021/01/07/new-blog-two.html"><div class="post-title">New Blog Two</div></a>
+            <div class="titlentags">
+                <a href="/linux/2021/01/07/new-blog.html"><div class="post-title"><h2>New Blog</h2>
+                </div></a>
+                <div class="tags">
+                    
+                    <span class="tag">#linux</span>
+                    
+                    <span class="tag">#cool</span>
+                    
+                    <span class="tag">#helloworld</span>
+                    
+                </div>
+            </div>
+            <div class="spoiler">
+                <p>well this is my blog post hehe hahaha</p>
+
+            </div>
         </div>
-        
         
         
         <div class="card">
-            <img class="post-image" src="/assets/post-header/New Blog Three" alt="New Blog Three">
-            <a href="/linux/2021/01/07/new-blog-three.html"><div class="post-title">New Blog Three</div></a>
+            <div class="titlentags">
+                <a href="/linux/2021/01/07/new-blog-two.html"><div class="post-title"><h2>New Blog Two</h2>
+                </div></a>
+                <div class="tags">
+                    
+                    <span class="tag">#linux</span>
+                    
+                    <span class="tag">#cool</span>
+                    
+                    <span class="tag">#helloworld</span>
+                    
+                </div>
+            </div>
+            <div class="spoiler">
+                <p>well this is my blog post hehe hahaha</p>
+
+            </div>
         </div>
-        
         
         
         <div class="card">
-            <img class="post-image" src="/assets/post-header/New Blog One" alt="New Blog One">
-            <a href="/linux/2021/01/07/new-blog-one.html"><div class="post-title">New Blog One</div></a>
+            <div class="titlentags">
+                <a href="/linux/2021/01/07/new-blog-three.html"><div class="post-title"><h2>New Blog Three</h2>
+                </div></a>
+                <div class="tags">
+                    
+                    <span class="tag">#linux</span>
+                    
+                    <span class="tag">#cool</span>
+                    
+                    <span class="tag">#helloworld</span>
+                    
+                </div>
+            </div>
+            <div class="spoiler">
+                <p>well this is my blog post hehe hahaha</p>
+
+            </div>
         </div>
-        
         
         
         <div class="card">
-            <img class="post-image" src="/assets/post-header/New Blog Four" alt="New Blog Four">
-            <a href="/linux/2021/01/07/new-blog-four.html"><div class="post-title">New Blog Four</div></a>
+            <div class="titlentags">
+                <a href="/linux/2021/01/07/new-blog-one.html"><div class="post-title"><h2>New Blog One</h2>
+                </div></a>
+                <div class="tags">
+                    
+                    <span class="tag">#linux</span>
+                    
+                    <span class="tag">#cool</span>
+                    
+                    <span class="tag">#helloworld</span>
+                    
+                </div>
+            </div>
+            <div class="spoiler">
+                <p>well this is my blog post hehe hahaha</p>
+
+            </div>
         </div>
-        
         
         
         <div class="card">
-            <img class="post-image" src="/assets/post-header/Welcome to Jekyll!" alt="Welcome to Jekyll!">
-            <a href="/jekyll/update/2020/12/31/welcome-to-jekyll.html"><div class="post-title">Welcome to Jekyll!</div></a>
+            <div class="titlentags">
+                <a href="/linux/2021/01/07/new-blog-four.html"><div class="post-title"><h2>New Blog Four</h2>
+                </div></a>
+                <div class="tags">
+                    
+                    <span class="tag">#linux</span>
+                    
+                    <span class="tag">#cool</span>
+                    
+                    <span class="tag">#helloworld</span>
+                    
+                </div>
+            </div>
+            <div class="spoiler">
+                <p>well this is my blog post hehe hahaha</p>
+
+            </div>
         </div>
         
         
-        <!-- <div class="card-big">
-            <img class="post-image" src="/assets/post-header/" alt="post image">
-            <div class="post-title">Big image</div>
+        <div class="card">
+            <div class="titlentags">
+                <a href="/jekyll/update/2020/12/31/welcome-to-jekyll.html"><div class="post-title"><h2>Welcome to Jekyll!</h2>
+                </div></a>
+                <div class="tags">
+                    
+                </div>
+            </div>
+            <div class="spoiler">
+                <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web...
+            </div>
         </div>
-            <div class="card1">
-                <img class="post-image" src="/assets/post-header/" alt="post image">
-                <div class="post-title">Card1</div>
-            </div>
-            <div class="card2">
-                <img class="post-image" src="/assets/post-header/" alt="post image">
-                <div class="post-title">Card2</div>
-            </div>
-            <div class="card3">
-                <img class="post-image" src="/assets/post-header/" alt="post image">
-                <div class="post-title">Card3</div>
-            </div>
-            <div class="card4">
-                <img class="post-image" src="/assets/post-header/" alt="post image">
-                <div class="post-title">Card4</div>
-            </div>
-            <div class="card5">
-                <img class="post-image" src="/assets/post-header/" alt="post image">
-                <div class="post-title">Card5</div>
-            </div>
-            <div class="card6">
-                <img class="post-image" src="/assets/post-header/" alt="post image">
-                <div class="post-title">Card6</div>
-            </div> -->
+        
     </div>
-    <!-- <div id="tags">
-        <div class="tags-card">
-            <img class="post-image" src="/assets/post-header/" alt="post image">
-                <div class="post-title">Card6</div>
-        </div>
-    </div> -->
-
-
+    </div>
     <style>
     *{
         box-sizing: border-box;
@@ -184,6 +241,7 @@
         height: 25vh;
         display: flex;
         align-items: center;
+        user-select: none;
         justify-content: space-between;
         flex-direction: column;
     }

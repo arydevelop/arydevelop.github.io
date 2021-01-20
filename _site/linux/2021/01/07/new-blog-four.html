@@ -45,7 +45,11 @@
         margin: 0 0.5rem;
         padding: 0.2em;
         box-shadow: -3px 5px 4px 0px #FFFF70;
+        user-select: none;
         
+    }
+    *::selection {
+        background: #ffff70; /* WebKit/Blink Browsers */
     }
 
 </style>
@@ -69,21 +73,22 @@
         justify-content: space-between;
         align-items: center;
         box-shadow: 0 1px 5px 0px hsl(60, 100%, 25%);
+        user-select: none;
     }
-    a{
+    .nav-link{
         color:black;
         text-decoration: none;
         transition: 0.2s;
     }
-    a:hover{
+    .nav-link:hover{
         text-decoration: underline;
         color:hsl(0, 0%, 25%);
         /* transform: translate(0px,0px); */
     }
 </style>
 <nav>
-    <a href="/" id="nav-icon">Ary Dev</a>
-    <a href="/about" id="nav-about">About</a>
+    <a href="/" class="nav-link">Ary Dev</a>
+    <a href="/about" class="nav-link">About</a>
 </nav>
 <div id="container">
     <h1 id="title">New Blog Four</h1>
@@ -137,6 +142,7 @@
         height: 25vh;
         display: flex;
         align-items: center;
+        user-select: none;
         justify-content: space-between;
         flex-direction: column;
     }
